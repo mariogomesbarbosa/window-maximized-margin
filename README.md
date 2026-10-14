@@ -1,5 +1,7 @@
 # Maximized Window Margins
 
+![Screenshot](images/preview.png)
+
 A [Windhawk](https://windhawk.net/) mod that leaves a configurable gap around
 maximized windows, macOS style. It pairs nicely with a floating dock, such as
 the *Luminosity* or *DockLike* themes of **Windows 11 Taskbar Styler**.
