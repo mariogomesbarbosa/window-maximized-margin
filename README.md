@@ -30,9 +30,11 @@ every maximized window fits inside it.
 
 ## Side effects
 
-Since the work area itself shrinks, the gap also applies to Snap / Snap Layouts
-and to desktop icon placement. Real fullscreen apps (games, videos, F11) cover
-the whole monitor and are not affected.
+Since the work area itself shrinks, the gap also applies to Snap / Snap Layouts,
+desktop icon placement, and anything else that positions itself from the work
+area, such as pop-ups and notifications that apps place in a corner of the
+screen. Real fullscreen apps (games, videos, F11) cover the whole monitor and
+are not affected.
 
 ## Rounded corners
 
