@@ -20,6 +20,24 @@ every maximized window fits inside it.
   and when the taskbar or another AppBar moves.
 - Disabling the mod restores the original work area immediately.
 
+## Gaps between snapped windows
+
+When two or more windows share the screen through Snap / Snap Layouts (halves,
+thirds, quarters...), the mod keeps the "Gap between snapped windows" between
+them. Edges that touch the screen keep the regular margins.
+
+- Resizing works as usual: drag the gap itself, or the edge of a snapped
+  window, and the windows on both sides resize together while the gap stays
+  the same. The Windows 11 divider only shows up while snapped windows touch,
+  so the mod provides its own, which works with any gap size.
+- Set the gap to 0 to turn this off.
+- Disabling the mod puts snapped windows back where Snap placed them.
+
+Under the hood, the mod watches window moves through an out-of-context
+[WinEvent hook](https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-setwineventhook)
+(still nothing injected) and fills each gap with an invisible window that
+handles the dragging.
+
 ## Settings
 
 | Setting        | Default | Description                                   |
@@ -28,6 +46,7 @@ every maximized window fits inside it.
 | Bottom margin  | 10      | Gap above the taskbar / bottom of the screen  |
 | Left margin    | 10      |                                               |
 | Right margin   | 10      |                                               |
+| Gap between snapped windows | 10 | Gap between windows arranged side by side with Snap (0 disables it) |
 | Monitors       | All     | All monitors, or the primary monitor only     |
 
 ## Side effects
